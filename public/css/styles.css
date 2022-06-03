@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: rgb(32, 32, 32);
+  color: rgb(185, 185, 185);
+}
+
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+    background-color: rgb(55, 55, 55);
+}
+
+.navbar-default .navbar-brand {
+    color: white;
+}
+
+.navbar-nav  li a:hover {
+    color: #1abc9c !important;
+}
+
+.navbar-nav li#compose a{
+    color: #1abc9c !important;
+}
+
+.navbar-nav li#compose a:hover{
+    color: #00ffcc !important;
+}
+
+.navbar-nav li#logout a{
+  color: #b70000 !important;
+}
+
+.navbar-nav li#logout a:hover{
+  color: #ff0000 !important;
+}
+
+.publish, .delete{
+    margin-top: 1.5rem;
+}
+  
+  .wrapper {
+    min-height: 84.5vh;
+  }
+
+  .wrapper-about{
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 12vh;
+  }
+
+  .wrapper-login{
+    margin-top: 5vh;
+    margin-bottom: 19.5vh;
+  }
+
+  .box-center{
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+
+  .form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+  }
+  
+  .form-signin .checkbox {
+    font-weight: 400;
+  }
+  
+  .form-signin .form-floating:focus-within {
+    z-index: 2;
+  }
+  
+  .e {
+    margin-bottom: 10px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  .p {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .sparsh-img{
+    border-radius: 100%;
+    width: 15vw;
+  }
+
+  .socials .social-link{
+      padding: 0.5vw;
+  }
+  
+  .push {
+    overflow: auto;
+    padding-bottom: 23vh;
+    /* must be same height as the footer */
+  }
+  
+  .footer {
+    position: relative;
+    margin-top: -71px;
+    height: 10vh;
+    clear: both;
+    background-color: #1abc9c;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  
+  .footer p {
+	margin-top: 25px;
+	font-size: 12px;
+    color: #fff;
+}
+
+  /* Opera Fix thanks to Maleika (Kohoutec) */
+  
+  body:before {
+    content: "";
+    height: 100%;
+    float: left;
+    width: 0;
+    margin-top: -32767px;
+    /* thank you Erik J - negate effect of float*/
+  }

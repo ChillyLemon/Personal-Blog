@@ -1,0 +1,21 @@
+<%- include('partials/header') %> 
+
+<div class="wrapper-login box-center">
+
+  
+  <main class="form-signin">
+    <h1 class="h3 mb-3 fw-normal">Log In</h1>
+    <form action="/login" method="post">
+      
+      <!-- classes have been added to inputs to change css -->
+      <div class="form-floating">
+        <input type="text" class="form-control e" id="floatingInput" placeholder="Username" name="username" required autocomplete="off">
+      </div>
+      <div class="form-floating">
+        <input type="password" class="form-control p" id="floatingInput" placeholder="Password" name="password" autocomplete="off">
+      </div>
+      
+      <button class="w-100 btn btn-s btn-primary" type="submit">Log In</button>
+      <div class="push"></div>
+    </div>
+<%- include('partials/footer') %>  

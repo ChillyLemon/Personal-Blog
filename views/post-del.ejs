@@ -1,0 +1,10 @@
+<%- include('partials/header') %>
+
+<div class="wrapper">
+    <% let url = "/delete/" + eId %>
+    <h1><%= eTitle %> </h1>
+    <p><%= eBody %> </p>
+    <a href=<%= url %> ><button type="submit" class="btn btn-danger delete" onclick="return confirm('Are you sure?')">DELETE</button></a>
+    <div class="push"></div>
+</div>
+<%- include('partials/footer') %> 

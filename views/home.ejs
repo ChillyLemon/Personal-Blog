@@ -1,0 +1,16 @@
+<%- include('partials/header') %> 
+
+<div class="wrapper">
+
+    
+    <h1>Home</h1>
+    <p><%= homeContent %> </p>
+    
+    <% postsArr.forEach(element => { %>
+        <% let url = "/posts/" + element._id %> 
+        <h1><%= element.postHead %> </h1>
+        <p><%= element.postContent.substring(0,100) + "..." %> <a href="<%= url %>">Read More</a></p>
+        <% });%>
+        <div class="push"></div>
+    </div>
+<%- include('partials/footer') %> 
